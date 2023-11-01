@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HSDev</title>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- font awesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body id="home">
+
+  <nav>
+    <div class="logo">
+      <img src="img/hsd.png" alt="">
+      <h1>HSDev</h1>
+    </div>
+    <div id="menu" class="ham-menu">
+      <input type="checkbox" name="check" id="check">
+      <span id="ham1"></span>
+      <span id="ham2"></span>
+      <span id="ham3"></span>
+    </div>
+    <ul id="nav-menu">
+      <li><a onclick="c_ham()" href="#home">Home</a></li>
+      <li><a onclick="c_ham()" href="#about">About</a></li>
+      <li><a onclick="c_ham()" href="#projects">Projects</a></li>
+      <li><a onclick="c_ham()" href="#skill">Skills</a></li>
+      <li><a onclick="c_ham()" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <br>
+
+  <div class="banner">
+    <div class="banner-text">
+      <div>
+        <h2>I'm</h2>
+        <h1>Habibul Umam</h1>
+        <h3>Full-Stack Web Developer</h3>
+      </div>
+    </div>
+    <div class="banner-img">
+      <img src="img/profile.jpg" alt="hsd">
+    </div>
+  </div>
+
+  <br id="about">
+  
+  <div style="background-color: #f0f0f0;height: 500px;display: flex;flex-direction: column;justify-content: center;gap:20px;">
+  <div class="title">
+    <h2>About Me</h2>
+  </div>
+  
+  <br><br>
+  
+  <div class="container-about">
+    <div class="about-text">
+      <h4>I am a Fullstack Web Developer with experience in developing web applications from start to launch. My expertise includes HTML, CSS, JavaScript, PHP, NodeJS, and several other programming languages. I am committed to providing high quality web solutions.
+      Let's talk more!</h4>
+    </div>
+    <div class="about-image">
+      <h3>Full-stack</h3>
+    </div>
+  </div>
+  
+  </div>
+  
+  <br id="projects"><br><br><br>
+  
+  <div class="title">
+    <h2>My Projects</h2>
+  </div>
+
+  <div class="container-projects">
+    <ul>
+      <li>
+        <a href="https://tiktokdownloader.malzstore.com">
+         <img src="img/ttmalz.jpg">
+        </a>
+      </li>
+      <li>
+        <img src="img/cwb.jpg">
+      </li>
+      <li>
+        <a href="https://ttvd--hsdev1.repl.co/">
+          <img src="img/ttvd.jpg">
+        </a>
+      </li>
+      <li>
+        <img src="img/pfd.jpg">
+      </li>      
+    </ul>
+  </div>
+  <br id="skill"><br><br><br>
+
+  <div class="title">
+    <h2>My Skills</h2>
+  </div>
+
+  <br><br>
+
+  <div class="container-skills">
+    <ul>
+      <li>
+        <img src="img/html.png">
+        <div class="prog-name">
+          <h4>HTML</h4>
+        </div>
+      </li>
+      <li>
+        <img src="img/css.png">
+        <div class="prog-name">
+          <h4>CSS</h4>
+        </div>
+      </li>
+      <li>
+        <img src="img/js.png">
+        <div class="prog-name">
+          <h4>JavaScript</h4>
+        </div>
+      </li>
+      <li>
+        <img src="img/php.png">
+        <div class="prog-name">
+          <h4>PHP</h4>
+        </div>
+      </li>
+      <li>
+        <img src="img/mysql.png">
+        <div class="prog-name">
+          <h4>MySql</h4>
+        </div>
+      </li>
+      <li>
+        <img src="img/nodejs.png">
+        <div class="prog-name">
+          <h4>NodeJS</h4>
+        </div>
+      </li> 
+      <li>
+        <img src="img/github.png">
+        <div class="prog-name">
+          <h4>github</h4>
+        </div>
+      </li>      
+    </ul>
+  </div>
+  
+  <br id="contact"><br><br><br>
+
+  <div class="title">
+    <h2>Contact Me</h2>
+  </div>
+
+  <div class="contact">
+    <div class="c-me">
+      <ul>
+        <li onclick="wa()">
+          <img src="img/wa.png" alt="">
+          <div class="con-name">
+            <h4>WhatsApp</h4>
+          </div>
+        </li>
+        <li>
+          <img src="img/gmail.png" alt="">
+          <div class="con-name">
+            <h4><a href="mailto: hsdev16@gmail.com">E-mail</a></h4>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <form id="Form" method="post">
+      <h4>Contact Form</h4>
+      <ul>
+        <li>
+          <input type="text" placeholder="Name" name="name" id="name">
+        </li>
+        <li>
+          <input type="number" placeholder="Phone Number" name="phone" id="phone">
+        </li>
+        <li>
+          <input type="text" placeholder="E-Mail" name="email" id="email">
+        </li>
+        <li>
+          <textarea name="message" placeholder="Typ...." id="message"></textarea>
+        </li>
+        <li>
+          <button type="submit">Submit</button>
+      </ul>
+    </form>
+  </div>
+  
+  <div class="bg-loader">
+    <div class="loader"></div>
+  </div>
+  
+  <br><br>
+  <footer>
+    <div class="footer-i">
+      <h3>Folow Me</h3>
+      <ul>
+        <li><a href="https://github.com/HSDev-16"><i class="fa-brands fa-github"></i>Github</a></li>
+        <li><a href="https://instagram.com/_haru._.16_?igshid=NzZlODBkYWE4Ng=="><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+        <li><a href="https://youtube.com/@Ngodingkuy16?si=9qxx5BG_D62jzUqF"><i class="fa-brands fa-youtube"></i>youtube</a></li>
+      </ul>
+    </div>
+    <h4>Copyright © 2023 HSDev, All rights reserved</h4>
+  </footer>
+
+  <!-- Java Script -->
+  <script src="main.js"></script>
+</body>
+
+</html>
